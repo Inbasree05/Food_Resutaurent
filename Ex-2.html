@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Paradise Layout</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .food-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Food Paradise</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Cart</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main container -->
+  <div class="container mt-4">
+
+    <!-- Search Bar -->
+    <div class="row mb-4">
+      <div class="col-md-8">
+        <input type="text" class="form-control" placeholder="Search for food...">
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-success w-100">Search</button>
+      </div>
+    </div>
+
+    <!-- Food Items Grid -->
+    <div class="row g-4 mb-5">
+      <div class="col-md-4 col-sm-6">
+        <img src="pizza.jpg" class="food-img" alt="Pizza">
+        <h5 class="text-center mt-2">Pizza</h5>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <img src="burger.jpg" class="food-img" alt="Burger">
+        <h5 class="text-center mt-2">Burger</h5>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <img src="pasta.jpg" class="food-img" alt="Pasta">
+        <h5 class="text-center mt-2">Pasta</h5>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <img src="kebabs.jpg" class="food-img" alt="Kebabs">
+        <h5 class="text-center mt-2">Kebabs</h5>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <img src="cake.jpg" class="food-img" alt="Cake">
+        <h5 class="text-center mt-2">Cake</h5>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <img src="biriyani.jpg" class="food-img" alt="Biriyani">
+        <h5 class="text-center mt-2">Biriyani</h5>
+      </div>
+    </div>
+
+    <!-- Table Section -->
+    <div class="row mb-5">
+      <div class="col-12">
+        <table class="table table-bordered text-center">
+          <thead class="table-dark">
+            <tr><th>Dish</th><th>Price</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Pizza</td><td>$10</td></tr>
+            <tr><td>Burger</td><td>$8</td></tr>
+            <tr><td>Pasta</td><td>$9</td></tr>
+            <tr><td>Kebabs</td><td>$12</td></tr>
+            <tr><td>Cake</td><td>$6</td></tr>
+            <tr><td>Biriyani</td><td>$14</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Carousel -->
+    <div class="row mb-5">
+      <div class="col-12">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/burger-with-melted-cheese.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://i.pinimg.com/474x/f2/c6/40/f2c640f36a78fe9b9e8e88a001250b91.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://restaurantindia.s3.ap-south-1.amazonaws.com/s3fs-public/news15137.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video Row -->
+    <div class="row mb-5">
+      <div class="col-md-4">
+        <video controls width="100%">
+          <source src="Pinterest Media  .mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="col-md-4">
+        <video controls width="100%">
+          <source src="Pinterest media.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="col-md-4">
+        <video controls width="100%">
+          <source src="Pinterest media (1).mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    &copy; 2025 Food Paradise. All rights reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
